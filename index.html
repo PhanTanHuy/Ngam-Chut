@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ngâm chút — Những phút ngâm chân nhỏ, cho những ngày cần được nghỉ ngơi. Khám phá 3 túi ngâm chân thư giãn theo cảm xúc: Đêm Êm, Tan Làm và Đẫm Mưa."
+    />
+    <meta property="og:title" content="Ngâm chút — Một chút thời gian cho đôi chân" />
+    <meta
+      property="og:description"
+      content="Một chút thảo mộc. Một chút thời gian. Một chút chăm mình."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/DemEm.png" />
+    <title>Ngâm chút — Một chút thời gian cho đôi chân</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="#top" aria-label="Ngâm chút home">
+            <img src="assets/images/LogoNgamChut.jpg" alt="Ngâm chút logo" />
+            <span>Ngâm chút</span>
+          </a>
+
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Mở menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+
+          <nav class="main-nav" aria-label="Main navigation">
+            <a href="#products">Sản phẩm</a>
+            <a href="#story">Câu chuyện</a>
+            <a href="#ritual">Cách dùng</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="container hero-shell">
+          <div class="hero-copy reveal fade-up">
+            <p class="eyebrow">Wellness ritual</p>
+            <h1>Chậm lại một chút.</h1>
+            <p class="lead">
+              Những phút ngâm chân nhỏ,<br />
+              cho những ngày cần được nghỉ ngơi.
+            </p>
+            <div class="cta-row">
+              <a class="btn btn-primary" href="#products">Khám phá 3 túi ngâm</a>
+            </div>
+            <ul class="hero-meta" aria-label="Lợi ích của sản phẩm">
+              <li>Thảo mộc tự nhiên</li>
+              <li>20 phút thư giãn</li>
+              <li>3 cảm xúc để chọn</li>
+            </ul>
+          </div>
+
+          <div class="hero-art reveal fade-left">
+            <div class="art-scene">
+              <div class="floating herb herb-one"></div>
+              <div class="floating herb herb-two"></div>
+              <div class="floating herb herb-three"></div>
+              <div class="product-shadow"></div>
+              <img
+                src="assets/images/LogoNgamChut.jpg"
+                alt="Logo Ngâm chút với hình chậu ngâm chân thảo mộc"
+                class="main-product"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="story section" id="story">
+        <div class="container story-shell reveal fade-up">
+          <div class="story-copy">
+            <p class="eyebrow">Một chút nghỉ ngơi</p>
+            <h2>Bạn không cần một ngày nghỉ.</h2>
+            <p>
+              Đôi khi chỉ cần 20 phút.<br />
+              Sau một ngày dài, hãy dành chút thời gian để ngâm chân, hít thở chậm lại,
+              và để cơ thể được nghỉ.
+            </p>
+          </div>
+
+          <div class="story-visual reveal fade-right">
+            <div class="leaf-cluster">
+              <div class="leaf leaf-a"></div>
+              <div class="leaf leaf-b"></div>
+              <div class="leaf leaf-c"></div>
+              <div class="leaf leaf-d"></div>
+            </div>
+            <img src="assets/images/herbs-night.png" alt="Thảo mộc và lá cây" />
+          </div>
+        </div>
+      </section>
+
+      <section class="products section" id="products">
+        <div class="container">
+          <div class="section-heading reveal fade-up">
+            <p class="eyebrow">Sản phẩm</p>
+            <h2>Chọn cảm giác phù hợp với bạn.</h2>
+          </div>
+          <div class="product-grid" id="productGrid" aria-live="polite"></div>
+        </div>
+      </section>
+
+      <section class="ritual section" id="ritual">
+        <div class="container">
+          <div class="section-heading reveal fade-up">
+            <p class="eyebrow">Ritual</p>
+            <h2>20 phút cho riêng mình.</h2>
+          </div>
+
+          <div class="ritual-steps">
+            <div class="ritual-step reveal fade-up">
+              <span class="step-num">01</span>
+              <h3>Chuẩn bị</h3>
+              <p>Nước ấm vừa đủ, có thể thêm vài lát gừng hoặc hoa hồng.</p>
+            </div>
+            <div class="ritual-step reveal fade-up delay-1">
+              <span class="step-num">02</span>
+              <h3>Ngâm</h3>
+              <p>15–20 phút thật chậm, để đôi chân được “đặt xuống” một chút.</p>
+            </div>
+            <div class="ritual-step reveal fade-up delay-2">
+              <span class="step-num">03</span>
+              <h3>Thở</h3>
+              <p>Đặt điện thoại xuống, hít sâu và cảm nhận không gian bớt gấp gáp.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="choice section" id="choice">
+        <div class="container">
+          <div class="section-heading reveal fade-up">
+            <p class="eyebrow">Cảm giác của bạn</p>
+            <h2>Bạn đang cần một chút gì?</h2>
+          </div>
+
+          <div class="choice-grid">
+            <a class="choice-card reveal fade-up" href="product.html?id=dem-em">
+              <span class="choice-icon">🌙</span>
+              <span class="choice-label">Một đêm thật êm</span>
+              <span class="choice-name">ĐÊM ÊM</span>
+            </a>
+            <a class="choice-card reveal fade-up delay-1" href="product.html?id=tan-lam">
+              <span class="choice-icon">☀</span>
+              <span class="choice-label">Buông một ngày dài</span>
+              <span class="choice-name">TAN LÀM</span>
+            </a>
+            <a class="choice-card reveal fade-up delay-2" href="product.html?id=dam-mua">
+              <span class="choice-icon">🌿</span>
+              <span class="choice-label">Một chút ấm áp</span>
+              <span class="choice-name">ĐẪM MƯA</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div class="footer-brand">
+          <a class="brand" href="#top" aria-label="Ngâm chút home">
+            <img src="assets/images/LogoNgamChut.jpg" alt="Ngâm chút logo" />
+            <span>Ngâm chút</span>
+          </a>
+          <p>
+            Một chút thảo mộc.<br />
+            Một chút thời gian.<br />
+            Một chút chăm mình.
+          </p>
+        </div>
+
+        <div class="footer-links" aria-label="Social links">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="mailto:hello@ngamchut.vn" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Khám phá sản phẩm ngâm chân thảo mộc của Ngâm chút, cách dùng và playlist nhạc thư giãn."
+    />
+    <meta property="og:type" content="product" />
+    <title>Sản phẩm — Ngâm chút</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="site-header" id="siteHeader">
+      <div class="container">
+        <div class="header-inner">
+          <a class="brand" href="index.html#top" aria-label="Ngâm chút home">
+            <img src="assets/images/LogoNgamChut.jpg" alt="Ngâm chút logo" />
+            <span>Ngâm chút</span>
+          </a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Mở menu"
+            aria-expanded="false"
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <nav class="main-nav" aria-label="Điều hướng chính">
+            <a href="index.html#products">Sản phẩm</a>
+            <a href="index.html#story">Câu chuyện</a>
+            <a href="index.html#ritual">Cách dùng</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="container product-detail-page" id="productDetail">
+      <section class="product-detail-section">
+        <a class="back-link" href="index.html#products">
+          <i class="bi bi-arrow-left" aria-hidden="true"></i>
+          Tất cả sản phẩm
+        </a>
+
+        <div class="detail-layout">
+          <div class="detail-visual-wrap reveal fade-left">
+            <div class="detail-visual">
+              <img id="detailImage" src="assets/images/DemEm.png" alt="" />
+            </div>
+          </div>
+
+          <div class="detail-copy reveal fade-up">
+            <span class="detail-tag" id="detailTag"></span>
+            <h1 id="detailTitle"></h1>
+            <p class="eyebrow" id="detailHeader"></p>
+            <p class="detail-description" id="detailDescription"></p>
+            <p class="detail-concept" id="detailConcept"></p>
+
+            <div class="detail-lists">
+              <div>
+                <span class="list-label">Hương</span>
+                <ul id="detailNotes"></ul>
+              </div>
+              <div>
+                <span class="list-label">Phù hợp</span>
+                <ul id="detailMatches"></ul>
+              </div>
+            </div>
+
+            <div class="usage-wrap">
+              <h2>Cách dùng</h2>
+              <ol id="detailSteps"></ol>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="playlist-section reveal fade-up" aria-labelledby="playlistTitle">
+        <div class="playlist-heading">
+          <p class="eyebrow">Một chút âm thanh</p>
+          <h2 id="playlistTitle">Chọn một bản nhạc để nghe.</h2>
+          <p>Chọn bất kỳ giai điệu nào bạn muốn; nhạc chỉ phát khi bạn chủ động bật.</p>
+        </div>
+
+        <div class="audio-player">
+          <div class="player-header">
+            <button
+              type="button"
+              class="player-toggle"
+              id="playPauseBtn"
+              aria-label="Phát bài nhạc đã chọn"
+            >
+              <i class="bi bi-play-fill" aria-hidden="true"></i>
+            </button>
+            <div class="player-meta">
+              <span class="player-label">Nghe một chút</span>
+              <div class="player-time" aria-live="off">
+                <span id="currentTime">00:00</span>
+                <span>/</span>
+                <span id="durationTime">00:00</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="player-visualizer" id="audioVisualizer" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+
+          <div class="player-controls">
+            <input
+              type="range"
+              id="seekBar"
+              min="0"
+              max="100"
+              value="0"
+              aria-label="Tiến độ phát nhạc"
+            />
+            <div class="volume-row">
+              <button type="button" class="volume-btn" id="muteBtn" aria-label="Tắt âm">
+                <i class="bi bi-volume-up-fill" aria-hidden="true"></i>
+              </button>
+              <input
+                type="range"
+                id="volumeBar"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.7"
+                aria-label="Âm lượng"
+              />
+            </div>
+          </div>
+
+          <p class="audio-status" id="audioStatus" role="status"></p>
+          <div class="music-playlist" id="musicPlaylist" aria-label="Danh sách nhạc"></div>
+          <audio id="productAudio" preload="none"></audio>
+        </div>
+      </section>
+    </main>
+
+    <section class="product-not-found container" id="productNotFound" hidden>
+      <h1>Chưa tìm thấy sản phẩm này.</h1>
+      <p>Hãy quay lại để chọn một chút phù hợp với bạn.</p>
+      <a class="btn btn-primary" href="index.html#products">Khám phá sản phẩm</a>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container footer-shell">
+        <div class="footer-brand">
+          <a class="brand" href="index.html#top" aria-label="Ngâm chút home">
+            <img src="assets/images/LogoNgamChut.jpg" alt="Ngâm chút logo" />
+            <span>Ngâm chút</span>
+          </a>
+          <p>
+            Một chút thảo mộc.<br />
+            Một chút thời gian.<br />
+            Một chút chăm mình.
+          </p>
+        </div>
+        <div class="footer-links" aria-label="Liên kết mạng xã hội">
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="Facebook">Facebook</a>
+          <a href="mailto:hello@ngamchut.vn" aria-label="Email">Email</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
