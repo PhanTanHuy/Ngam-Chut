@@ -1,6 +1,6 @@
 # Ngâm chút
 
-Landing page giới thiệu 3 túi ngâm chân thư giãn: Đêm Êm, Tan Làm và Đẫm Mưa.
+Landing page giới thiệu 3 túi ngâm chân thư giãn: Đêm Êm, Tan Làm và Dầm Mưa.
 
 ## Chạy local
 
@@ -12,7 +12,7 @@ Bạn có thể mở trực tiếp file `index.html` trong trình duyệt hoặc
 
 - `DemEm.png` — Đêm Êm
 - `TanLam.png` — Tan Làm
-- `DamMua.png` — Đẫm Mưa
+- `DamMua.png` — Dầm Mưa
 - `LogoNgamChut.jpg` — logo
 
 Ba ảnh PNG đã loại bỏ nền trắng ở hai góc trên để hòa vào nền trang. Ảnh sản phẩm được tham chiếu trong `js/script.js`; logo nằm trong `index.html` và `product.html`. Có thể thay ảnh giữ nguyên tên file hoặc cập nhật các đường dẫn tương ứng.
