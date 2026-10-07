@@ -52,7 +52,7 @@ const products = [
     audio: "assets/audio/dam-mua.mp3",
     musicStyle: "Tiếng mưa · ambient · piano",
     notes: ["Gừng khô", "Sả", "Tía tô", "muối"],
-    suits: ["Sau trời lạnh", "Sau khi đi mưa", "Muốn ấm dưỡng"],
+    suits: ["Sau trời lạnh", "Sau khi đi mưa", "Muốn sưởi ấm"],
     steps: [
       "Chuẩn bị một chậu nước ấm vừa đủ.",
       "Cho túi ngâm vào và ngâm chân 15–20 phút.",
