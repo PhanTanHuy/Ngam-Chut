@@ -32,7 +32,7 @@ const products = [
     audio: "assets/audio/tan-lam.mp3",
     musicStyle: "Piano · acoustic · ấm áp",
     notes: ["Sả", "Vỏ cam", "Ngải cứu", "muối"],
-    suits: ["Sau giờ làm", "Khi mệt mỏi", "Muốn buông xuống"],
+    suits: ["Sau giờ làm", "Khi mệt mỏi", "Cần một chút nghỉ ngơi"],
     steps: [
       "Đổ nước ấm vào chậu rồi thả túi ngâm.",
       "Ngâm chân khoảng 15–20 phút, đặt tay lên đầu gối.",
@@ -47,7 +47,7 @@ const products = [
     tone: "sage",
     header: "Ấm áp sau ướt mưa",
     description: "Cho những hôm ướt mưa trên đường về.",
-    concept: "Một chút ấm áp, một chút thư thái cho ngày mưa.",
+    concept: "Một chút ấm áp, sưởi lại đôi chân sau những cơn mưa.",
     image: "assets/images/DamMua.png",
     audio: "assets/audio/dam-mua.mp3",
     musicStyle: "Tiếng mưa · ambient · piano",
