@@ -410,35 +410,41 @@ h4,
 
 .story-visual {
   position: relative;
-  min-height: 360px;
-  display: grid;
-  place-items: center;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.22), rgba(94, 126, 117, 0.12));
-  border: 1px solid rgba(29, 26, 26, 0.05);
-  border-radius: 32px;
-  overflow: hidden;
+  min-height: 420px; /* tăng chiều cao vùng chứa */
+  overflow: visible; /* không cắt ảnh */
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
 
-.story-visual img {
-  width: min(100%, 300px);
-  object-fit: contain;
-  animation: floatCard 5.5s ease-in-out infinite;
-}
-
-.story-visual .story-logo {
+/* Ảnh phía sau */
+.story-visual > img:not(.story-logo) {
   position: absolute;
+  z-index: 1;
   top: 50%;
   left: 50%;
-  z-index: 1;
-  width: 136px;
-  aspect-ratio: 1;
-  border-radius: 24px;
+  width: 110%;
+  height: 110%;
   object-fit: cover;
   transform: translate(-50%, -50%);
-  box-shadow: 0 12px 28px rgba(29, 26, 26, 0.16);
-  animation: floatStoryLogo 5.5s ease-in-out infinite;
 }
 
+/* Logo phía trước */
+.story-visual .story-logo {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  width: 45%;
+  height: auto;
+
+  transform: translate(-50%, -50%);
+
+  object-fit: contain;
+  border-radius: 50%;
+  border: 5px solid white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
+}
 .product-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1150,11 +1156,6 @@ input[type="range"] {
 @keyframes floatCard {
   0%, 100% { transform: translateY(0px); }
   50% { transform: translateY(-10px); }
-}
-
-@keyframes floatStoryLogo {
-  0%, 100% { transform: translate(-50%, -50%); }
-  50% { transform: translate(-50%, calc(-50% - 10px)); }
 }
 
 @keyframes drift {
