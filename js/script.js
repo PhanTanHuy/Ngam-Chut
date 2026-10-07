@@ -11,7 +11,7 @@ const products = [
     image: "assets/images/DemEm.png",
     audio: "assets/audio/dem-em.mp3",
     musicStyle: "Piano · ambient · ngủ ngon",
-    notes: ["Cúc", "Hoa nhài", "Vỏ quế", "muối"],
+    notes: ["Cúc", "Hoa nhài", "Vỏ quế"],
     suits: ["Buổi tối", "Trước khi ngủ", "Khi cần thư giãn"],
     steps: [
       "Cho túi ngâm vào nước ấm.",
@@ -31,7 +31,7 @@ const products = [
     image: "assets/images/TanLam.png",
     audio: "assets/audio/tan-lam.mp3",
     musicStyle: "Piano · acoustic · ấm áp",
-    notes: ["Sả", "Vỏ cam", "Ngải cứu", "muối"],
+    notes: ["Sả", "Vỏ cam", "Ngải cứu"],
     suits: ["Sau giờ làm", "Khi mệt mỏi", "Cần một chút nghỉ ngơi"],
     steps: [
       "Đổ nước ấm vào chậu rồi thả túi ngâm.",
@@ -51,7 +51,7 @@ const products = [
     image: "assets/images/DamMua.png",
     audio: "assets/audio/dam-mua.mp3",
     musicStyle: "Tiếng mưa · ambient · piano",
-    notes: ["Gừng khô", "Sả", "Tía tô", "muối"],
+    notes: ["Gừng khô", "Sả", "Tía tô"],
     suits: ["Sau trời lạnh", "Sau khi đi mưa", "Muốn sưởi ấm"],
     steps: [
       "Chuẩn bị một chậu nước ấm vừa đủ.",
