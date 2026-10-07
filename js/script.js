@@ -16,7 +16,7 @@ const products = [
     steps: [
       "Cho túi ngâm vào nước ấm.",
       "Ngâm chân 15–20 phút trong không gian yên tĩnh.",
-      "Hít sâu và để cơ thể trở về trạng thái ngủ.",
+      "Hít sâu và để cơ thể trở về trạng thái thả lỏng.",
     ],
   },
   {
@@ -26,7 +26,7 @@ const products = [
     tag: "AFTER WORK",
     tone: "amber",
     header: "Thư giãn sau ngày bận rộn",
-    description: "Cho giây phút hạ màn một ngày dài cố gắng.",
+    description: "Cho những mệt mỏi được khép lại sau một ngày dài.",
     concept: "Ấm áp, dễ chịu, để cơ thể có một khoảng nghỉ sau giờ làm.",
     image: "assets/images/TanLam.png",
     audio: "assets/audio/tan-lam.mp3",
